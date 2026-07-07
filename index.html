@@ -90,6 +90,33 @@
 
   @media (prefers-reduced-motion: reduce){.btn{transition:none;}}
 </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18281555830"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18281555830');
+</script>
+
+<!-- Event snippet for Clique de saida conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18281555830/B5GVCLWnw8wcEPbOqY1E',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 </head>
 <body>
 
@@ -172,7 +199,7 @@
     <div class="cta-box">
       <h3>See current KlickTipp plans</h3>
       <p>You'll be taken to the official KlickTipp site to compare plans and pricing.</p>
-      <a class="btn" href="https://www.digistore24.com/redir/38219/dayanagaby123da6e/" target="_blank" rel="nofollow sponsored noopener">
+      <a class="btn" href="https://www.digistore24.com/redir/38219/dayanagaby123da6e/" onclick="return gtag_report_conversion('https://www.digistore24.com/redir/38219/dayanagaby123da6e/');" target="_blank" rel="nofollow sponsored noopener">
         View official site →
       </a>
       <div class="btn-sub">No commitment — just pricing and plan details</div>
@@ -187,7 +214,7 @@
   </section>
 
   <div class="center-cta">
-    <a class="btn" style="background:var(--accent);color:#fff;" href="https://www.digistore24.com/redir/38219/dayanagaby123da6e/" target="_blank" rel="nofollow sponsored noopener">
+    <a class="btn" style="background:var(--accent);color:#fff;" href="https://www.digistore24.com/redir/38219/dayanagaby123da6e/" onclick="return gtag_report_conversion('https://www.digistore24.com/redir/38219/dayanagaby123da6e/');" target="_blank" rel="nofollow sponsored noopener">
       Compare KlickTipp plans
     </a>
   </div>
@@ -207,3 +234,4 @@
 
 </body>
 </html>
+
